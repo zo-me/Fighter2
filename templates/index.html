@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Fighter2</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+    <div id="game-container">
+        <canvas id="gameCanvas" width="1280" height="720"></canvas>
+        
+        <!-- UI Elements -->
+        <div id="ui">
+            <div class="health-bar left">
+                <div id="player-health" class="fill"></div>
+            </div>
+            <div class="health-bar right">
+                <div id="enemy-health" class="fill"></div>
+            </div>
+            <div id="timer">60</div>
+        </div>
+
+        <!-- Touch Controls (for Tablets) -->
+        <div id="touch-controls">
+            <div id="d-pad">
+                <button class="ctrl-btn" data-key="ArrowLeft">◀</button>
+                <button class="ctrl-btn" data-key="ArrowRight">▶</button>
+                <button class="ctrl-btn" data-key="ArrowUp">▲</button>
+                <button class="ctrl-btn" data-key="ArrowDown">▼</button>
+            </div>
+            <div id="action-buttons">
+                <button id="attack-btn" class="act-btn" data-key="Space">ATK</button>
+            </div>
+        </div>
+        
+        <div id="start-screen">
+            <h1>FIGHTER 2</h1>
+            <p>Press SPACE or Tap ATK to Start</p>
+        </div>
+    </div>
+
+    <script src="/static/js/game.js"></script>
+</body>
+</html>
